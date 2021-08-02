@@ -1,0 +1,83 @@
+div.img__base{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    img.img__base--cupcakes{
+        width: 80%;
+        padding: 15px;
+
+    }
+}
+
+img{
+    width: 50%;
+    @extend %border;
+  }
+
+video {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 20px 0;
+}
+
+
+// Product
+
+.hover-effect{
+    float: left; /* for demonstration purpose only */
+    padding-right: 20px; /* for demonstration purpose only */
+    position: relative;
+  }
+  
+  .caption{
+    background-color: rgba(#ffffff, 0.9);
+    @extend %border;
+    z-index:5;
+    position: absolute;
+    margin: 0 auto;
+    top: 9%;
+    left: 8%;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  
+  .hover-effect:hover{
+    .caption{
+      visibility: visible;
+      -webkit-transform: translate(0, 0%);
+      transform: translate(0, 0%);
+      opacity: 1;
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s;
+    }
+  }
+  
+  .hover-effect:hover:after{
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 0.9;
+  }
+  
+  .caption h3{
+    margin-top: 18%;
+  }
+  
+  .caption h6{
+      margin-top: 0;
+  }
+  
+  .caption h6, .caption h6{
+    padding-top:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+
+  //  Prod-end

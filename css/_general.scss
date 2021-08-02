@@ -1,0 +1,105 @@
+//Sizes
+$sm: 1rem;
+$md: 2.5rem;
+$lg: 4rem;
+
+
+%border{
+  border-radius: .5rem;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $white;
+}
+
+h1 {
+  &.title {
+    font: {
+      family: $font-title;
+      size: $title-size;
+      weight: 700;
+    }
+    line-height: 44px;
+    color: $primary;
+    padding: 20px 0 0 20px;
+  }
+}
+
+h2 {
+  color: $primary;
+  &.subtitle {
+    color: $secondary;
+    font: {
+      family: $font-subtitle;
+      size: $subtitle-size;
+      weight: 600;
+    }
+    padding: 20px 0 15px 20px;
+  }
+}
+
+h3{
+  color: $primary;
+  font: {
+    family:$font-title;
+  }
+}
+
+h5{
+  color: $secondary;
+  font: {
+    size: $card-font-size;
+  }
+}
+
+h6{
+  color: $primary;
+  font: {
+    family:$font-subtitle;
+  }
+}
+
+
+
+p {
+  font: {
+    family: $font-base;
+    size: $base-font-size;
+    weight: 400;
+  }
+  line-height: 26px;
+  padding: 10px 10px 10px 25px;
+  margin: 0;
+  color: $colorBase;
+}
+
+in__present {
+  //some
+  &--title {
+    //some
+  }
+  &--subtitle {
+    //some
+  }
+  &--text {
+    //some
+  }
+}
+
+
+
+.us__area{
+  padding:2rem;
+}
+
+blockquote{
+  color: $white;
+  font:{
+    size: $footer-font-size;
+  }
+}
