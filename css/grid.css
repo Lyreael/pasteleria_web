@@ -3,19 +3,19 @@
 
 /* Desktop */
 
-.container {
+.containerInd {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 700px;
     gap: 15px;
 }
 
-.container .video {
+.containerInd .video {
     grid-column: 1/ span 2;
     grid-row: 3 / 4;
 }
 
-.container .carousel {
+.containerInd .carousel {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -26,23 +26,23 @@
 /* Tablet */
 
 @media only screen and (max-width:768px){
-    .container{
+    .containerInd{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 5px;
     }
-    .container .cak {
+    .containerInd .cak {
         grid-row: 2 / span 1;
     }
-    .container .carousel {
+    .containerInd .carousel {
         display: flex;
         justify-content:center;
         align-items:center;
         grid-column: 1/ span 1;
         grid-row: 3 / 4;
     }
-    .container .video {
+    .containerInd .video {
         grid-column: 1/ span 2;
         grid-row: 4 / 5;
     }
@@ -53,17 +53,17 @@
 /* Mobile */
 
 @media only screen and (max-width:600px){
-    .container{
+    .containerInd{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 5px;
         text-align: center;
     }
-    .container .cak {
+    .containerInd .cak {
         grid-row: 2 / span 1;
     }
-    .container .carousel {
+    .containerInd .carousel {
         display: flex;
         justify-content:center;
         align-items:center;
@@ -72,7 +72,7 @@
     }
 
 
-    .container .video {
+    .containerInd .video {
         grid-column: 1/ span 2;
         grid-row: 4 / 5;
     }

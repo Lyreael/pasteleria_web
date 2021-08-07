@@ -1,16 +1,23 @@
+//// Footer style
+
 .footer {
-    font-family: $footer-font-size;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-    background-color: $secondary;
-    margin-top: 50px;
-  .footer_social{
+  font-family: $font-sub;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  background:{
+    color: $secondary;
+    size: cover;
+    } 
+  margin-top: 50px;
+
+ //.footer_social{
     //algo
-    .footer__social--ig{
+ //   .footer__social--ig{
       //algo
-    }
-  }   
+    //}
+  //}   
+
 }
-  
+
