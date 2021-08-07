@@ -3,7 +3,6 @@ $sm: 1rem;
 $md: 2.5rem;
 $lg: 4rem;
 
-
 %border{
   border-radius: .5rem;
 }
@@ -16,6 +15,8 @@ body {
   justify-content: space-between;
   background-color: $white;
 }
+
+//Titles & p
 
 h1 {
   &.title {
@@ -63,8 +64,12 @@ h6{
     family:$font-subtitle;
   }
 }
-
-
+h4 {
+  color: $primary
+  font:{
+    size:$footer-font-size;
+  }
+}
 
 p {
   font: {
@@ -92,14 +97,6 @@ in__present {
 }
 
 
-
 .us__area{
   padding:2rem;
-}
-
-blockquote{
-  color: $white;
-  font:{
-    size: $footer-font-size;
-  }
 }
