@@ -5,24 +5,25 @@
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta name="description" content="Pastelería artesanal, con sabores únicos en cada creación.">
+          <meta name="description" content="Un lugar mágico, con las tortas, cupcakes y donuts más ricas y de sabores únicos.  ">
           <meta name="keywords" content="pastelería, pastelería montevideo, pastelería y repostería, donas, cupcakes, tortas">
 
         <!-- ======== HTML Meta Tags ======== -->
-          <title>Pasteleria Zero - Sabores únicos</title>
+          <title>Pasteleria Keki - Sabores únicos</title>
 
         <!-- ======== Stylesheet ======== -->
           <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
           <link rel="stylesheet" href="boost/css/bootstrap.min.css">
           <link rel="stylesheet" href="css/style.css">
           <link rel="stylesheet" href="css/grid.css">
+        <!-- ======== Font Awesome script ======== -->          
           <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <!-- ===== Navbar BS ===== -->
-        <nav class="navbar navbar-expand-lg  sticky-top justify-content-end">
+        <!-- ===== Primer NavBar ===== -->
+        <!-- <nav class="navbar navbar-expand-lg  sticky-top justify-content-end">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img class="navbar__img" src="assets/favicon.svg" alt=""></a>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -32,9 +33,9 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="html/us.html">Nosotros</a>
-                  </li>
+                  </li> -->
                   <!-- ===== Dropdown ===== -->
-                  <li class="nav-item">
+                  <!--<li class="nav-item">
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="html/products.html" role="button" aria-expanded="false">Productos</a>
                       <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="html/products.html#snCup">Cupcakes</a></li>
@@ -53,11 +54,55 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </nav> -->
+
+
+    <!-- ===== NavBar Responsive BS ===== -->
+
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg main-nav px-0">
+          <a class="navbar-brand" href="/mojo">
+                  <img src="assets/favicon.svg" alt="Keki">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="icon-bar icon-bar-1"></span>
+                          <span class="icon-bar icon-bar-2"></span>
+                          <span class="icon-bar icon-bar-3"></span>
+                      </button>
+          <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto text-uppercase f1">
+              <li>
+                <a href="#home" class="active active-first">home</a>
+              </li>
+              <li>
+                <a href="#about">about us</a>
+              </li>
+              <li>
+                <a href="#service">services</a>
+              </li>
+              <li>
+                <a href="#project">projects</a>
+              </li>
+              <li>
+                <a href="#team">team</a>
+              </li>
+              <li>
+                <a href="#testimony">testimonils</a>
+              </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
     </header>
 
     <section class="container containerInd">
-        <div class="in__present">
+        <div>
             <h1 class="title">Pastelería & Cafetería</h1>
               <h2 class="subtitle">Lorem ipsum dolor sit amet</h2>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. Duis tincidunt, ex in mattis viverra. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur explicabo voluptatum, obcaecati laborum repudiandae recusandae odio, rem earum magnam minima quibusdam eaque tenetur in. Natus dignissimos ratione vel et.</p> 
@@ -91,20 +136,55 @@
           </div>  
     </section>
 
-<footer class="footer">
+<!-- ====== Primer footer ======
+  <footer class="footer">
             <div class="footer__social">
                 <a class="footer__social--ig" href="http://www.instragram.com/"><i class="fab fa-instagram"></i></a>
                 <a class="footer__social--fb" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
                 <a class="footer__social--yt" href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
-            </div>
+            </div>-->
             <!--Arquitectura de la página?-->
             <!--logo-->
             <!--Suscripción-->
-            <div>
+<!--            <div>
                 <p> Diseñado por Carolina González| Coder House | 2021</p>
             </div>
-    </footer> 
+    </footer> -->
 
+<!-- ====== Footer BS ====== -->
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h4>Productos</h4>
+                  <ul>
+                      <li><a href="#">Cupcakes</a></li>
+                      <li><a href="#">Donuts</a></li>
+                      <li><a href="#">Tortas</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item text">
+                    <h4>Encuéntranos</h4>
+                    <p class="foot"> Dirección: Gral Artigas 1234, Montevideo. <br> Horario: Lun a Sáb - 10:00 a 20:00</p>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 item text">
+                  <h4>Pastelería Keki</h4>
+                  <p class="foot">Nueva Pastelería con sabores únicos y creativos</p>
+              </div>
+
+              <div class="col-12 item social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <p class="copyright">Carolina González © 2021 | Coder House</p>
+      </div>
+    </footer>
+    </div>
 
 
 

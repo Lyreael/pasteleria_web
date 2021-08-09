@@ -48,26 +48,26 @@ h3{
   color: $primary;
   font: {
     family:$font-title;
+    size: $subtitle-size+-4px;
   }
+}
+
+h4 {
+  color: $primary;
+  font-size: $subtitle-size+-6px ;
 }
 
 h5{
   color: $secondary;
   font: {
-    size: $card-font-size;
+    size: $subtitle-size+-8px;
   }
 }
 
 h6{
   color: $primary;
   font: {
-    family:$font-subtitle;
-  }
-}
-h4 {
-  color: $primary
-  font:{
-    size:$footer-font-size;
+    family:$subtitle-size+-10px;
   }
 }
 
@@ -83,18 +83,18 @@ p {
   color: $colorBase;
 }
 
-in__present {
+//in__present {
   //some
-  &--title {
+  //&--title {
     //some
-  }
-  &--subtitle {
+  //}
+  //&--subtitle {
     //some
-  }
-  &--text {
+ // }
+//  &--text {
     //some
-  }
-}
+//  }
+//}
 
 
 .us__area{
