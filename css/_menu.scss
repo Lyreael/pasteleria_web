@@ -61,7 +61,7 @@
 #mainMenu li > a {
     font-size: 12px;
     letter-spacing: 1px;
-    color: #fff;
+    color: $white;
     font-weight: 400;
     position: relative;
     z-index: 1;
@@ -109,29 +109,6 @@
 }
 
 .main-header {
-    background-color: $secondary;
-    &.fixed-nav {
-        #mainMenu li > a::before {
-        background: #000;
-    }
-    top: 0;
-    background: #fff;
-    -webkit-box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
-    box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-
-    .navbar-brand > img {
-        &:last-of-type {
-            display: block;
-        }
-
-        &:first-of-type {
-            display: none;
-            }
-        }
-    }
-
     position: sticky;
     top: 0;
     left: 0;
@@ -139,6 +116,26 @@
     width: 100%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    background-color: $secondary;
+    &.fixed-nav {
+        #mainMenu li > a::before {
+        background: #000;
+        }
+        top: 0;
+        background: $white;
+        -webkit-box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
+        box-shadow: 0 8px 12px -8px rgba(0, 0, 0, 0.09);
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        .navbar-brand > img {
+            &:last-of-type {
+                display: block;
+            }
+        &:first-of-type {
+            display: none;
+            }
+        }
+    }
 }
 
 .navbar-brand {
@@ -149,30 +146,27 @@
     max-width: 40px;
     animation: fadeInLeft 0.4s both 0.4s;
 }
-  
-  /* main-header end */
-  @media (max-width: 991px) {
-    /*header starts*/
-  
+
+@media (max-width: 991px) {
     .collapse.in {
-      display: block !important;
-      padding: 0;
-      clear: both;
+        display: block !important;
+        padding: 0;
+        clear: both;
     }
-  
+
     .navbar-toggler {
-      margin: 0;
-      padding: 0;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: 25px;
-      right: 0;
-      border: none;
-      border-radius: 0;
-      outline: none !important;
+        margin: 0;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        border: none;
+        border-radius: 0;
+        outline: none !important;
     }
-  
+
     .main-header {
         .navbar {
             float: none;
@@ -247,8 +241,9 @@
 
     .navbar-toggler {
         &:hover .icon-bar, &:focus .icon-bar {
-            background-color: #fff;
+            background-color: $white;
         }
     }
 }
 }
+/*End Navbar*/
