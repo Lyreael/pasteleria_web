@@ -19,56 +19,68 @@
           <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- ===== Navbar BS ===== -->
-        <nav class="navbar navbar-expand-lg  justify-content-end">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="navbar__img" src="../assets/favicon.svg" alt=""></a>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="Home" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="us.html">Nosotros</a>
-                  </li>
-                  <!-- ===== Dropdown ===== -->
-                  <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="products.html" role="button" aria-expanded="false">Productos</a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="products.html#snCup">Cupcakes</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="products.html#snDon">Donuts</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="products.html#snCake">Tortas</a></li>
-                      </ul>
-                      </li>
 
-                    <li class="nav-item active">
-                      <a class="nav-link" href="tips.html">Tips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacto</a>
-                      </li>
-                </ul>
+<!-- ===== NavBar Responsive BS ===== -->
+<header class="main-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg main-nav px-0">
+      <a class="navbar-brand" href="../index.html">
+              <img src="../assets/favicon.svg" alt="Keki">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="icon-bar icon-bar-1"></span>
+                      <span class="icon-bar icon-bar-2"></span>
+                      <span class="icon-bar icon-bar-3"></span>
+                  </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ml-auto text-uppercase f1">
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="us.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="products.html">Productos</a>
+          </li>
+          <li>
+            <a href="place.html" class="active active-first">Lugar</a>
+          </li>
+          <li>
+            <a href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <h1 class="title">¡Ven a visitarnos!</h1>
+        <h2 class="subtitle">Nuestro local</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, ex in mattis viverra. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur explicabo voluptatum, obcaecati laborum repudiandae recusandae odio, rem earum magnam minima quibusdam eaque tenetur in. Natus dignissimos ratione vel et.</p> 
+  </div>
+  <div class="col-md-6 col-sm-12">
+        <img  src="../assets/cupCakes.jpg" alt="Local Pasteleria Keki">
+    </div>
+  </div>
+
+  <!-- Slider imagenes del local -->
+  <div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+    <h3>Nuestra ubicación</h3>
+              <div>
+                <iframe width="600px" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=bulevard%20general%20artigas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
               </div>
-            </div>
-          </nav>
-    </header>
-
-
-    <section>
-            <h1>¡Tips!</h1>
-            <article>
-
-
-                <!--Posible página a cambiar-->
-
-                <!-- Contenido sin definir-->
-
-
-            </article>
-        </section>
+    </div>
+  </div>
+</section>
         
 <!-- ====== Footer BS ====== -->
 
@@ -104,13 +116,7 @@
       </div>
     </footer>
     </div>
-            <!--Arquitectura de la página?-->
-            <!--logo-->
-            <!--Suscripción-->
-            <div>
-                <blockquote><i> Diseñado por XXXX | Footer | 2021</i></blockquote>
-            </div>
-    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="../boost/js/bootstrap.bundle.js"></script>
 </body>

@@ -24,7 +24,7 @@ h2 {
 }
 
 h2.subtitle {
-  color: #ffbdbc;
+  color: #ffaead;
   font-family: "Poppins", san-serif;
   font-size: 26px;
   font-weight: 600;
@@ -43,7 +43,7 @@ h4 {
 }
 
 h5 {
-  color: #ffbdbc;
+  color: #ffaead;
   font-size: 18px;
 }
 
@@ -73,7 +73,8 @@ p {
 }
 
 #mainMenu li > a {
-  font-size: 12px;
+  font-size: 12.5px;
+  font-family: "Poppins", san-serif;
   letter-spacing: 1px;
   color: #fff5f5;
   font-weight: 400;
@@ -117,7 +118,7 @@ p {
   z-index: 99;
   width: 100%;
   transition: all 0.4s ease;
-  background-color: #ffbdbc;
+  background-color: #ffaead;
 }
 
 .main-header.fixed-nav {
@@ -144,7 +145,7 @@ p {
 }
 
 .main-header .navbar-brand img {
-  max-width: 40px;
+  max-width: 50%;
   animation: fadeInLeft 0.4s both 0.4s;
 }
 
@@ -300,7 +301,7 @@ video {
 .footer-dark {
   margin-top: 5%;
   padding: 50px 0;
-  background: #ffbdbc;
+  background: #ffaead;
 }
 
 .footer-dark h4 {
@@ -348,9 +349,9 @@ video {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 0.5px #ff7b79;
+  box-shadow: 0 0 0 0.5px #fff5f5;
   margin: 0 8px;
-  color: #ff7b79;
+  color: #fff5f5;
   opacity: 0.7;
 }
 
@@ -386,12 +387,16 @@ video {
   }
 }
 
+section.contactSp {
+  margin-top: 5%;
+}
+
 .contact-form {
   background: #ffe4e3;
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 1rem;
-  width: 70%;
+  width: 100%;
 }
 
 .contact-form .form-control {

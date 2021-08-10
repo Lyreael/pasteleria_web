@@ -19,90 +19,117 @@
     <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <header>
-            <!-- ===== Navbar BS ===== -->
-            <nav class="navbar navbar-expand-lg  justify-content-end">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img class="navbar__img" src="../assets/favicon.svg" alt=""></a>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="Home" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="us.html">Nosotros</a>
-                      </li>
-                      <!-- ===== Dropdown ===== -->
-                      <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="products.html" role="button" aria-expanded="false">Productos</a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="products.html#snCup">Cupcakes</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="products.html#snDon">Donuts</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="products.html#snCake">Tortas</a></li>
-                          </ul>
-                        </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link" href="tips.html">Tips</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                          </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-    <!-- Form -->
-    <section class=" container">
-      <div class="row vh-80 justify-content-center contact-form">
-        <div class="contact-image">
-            <img src="../assets/donutIcon.svg" alt="rocket_contact"/>
-        </div>
-        <div class="col-auto">
-        <form method="post">
-            <h2 class="subtitle">Déjanos un mensaje</h2>
-            <p>¡Cuéntanos tu experiencia con nosotros y así seguir mejorando juntos!</p>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <input type="text" name="txtName" class="form-control" placeholder="Tu nombre *" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Tu e-mail *" value="" />
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <textarea name="txtMsg" class="form-control" placeholder="Escribe tu mensaje*" style="width: 100%; height: 150px;"></textarea>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div>
-</div>
-
-
-
-    <div class="row">
-      <iframe width="600px" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=bulevard%20general%20artigas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-    </div>
-</section>
-    <footer class="footer">
-      <div class="footer__social">
-        <a class="footer__social--ig" href="http://www.instragram.com/"><i class="fab fa-instagram"></i></a>
-        <a class="footer__social--fb" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-        <a class="footer__social--yt" href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+<!-- ===== NavBar Responsive BS ===== -->
+<header class="main-header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg main-nav px-0">
+      <a class="navbar-brand" href="#">
+              <img src="../assets/favicon.svg" alt="Keki">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="icon-bar icon-bar-1"></span>
+                      <span class="icon-bar icon-bar-2"></span>
+                      <span class="icon-bar icon-bar-3"></span>
+                  </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ml-auto text-uppercase f1">
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="us.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="products.html">Productos</a>
+          </li>
+          <li>
+            <a href="place.html">Lugar</a>
+          </li>
+          <li>
+            <a href="contact.html" class="active active-first">Contacto</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <blockquote><i> Diseñado por Carolina González | Coder House | 2021</i></blockquote>
+    </nav>
+  </div>
+</header>
+
+<section class="contactSp">
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6 col-md-3"></div>
+
+      <div class="col-sm-6 col-md-6">
+        <div class="row vh-80 justify-content-center contact-form">
+          <div class="contact-image">
+              <img src="../assets/donutIcon.svg" alt="rocket_contact"/>
+          </div>
+          <div class="col-auto">
+          <form method="post">
+              <h2 class="subtitle">Déjanos un mensaje</h2>
+              <p>¡Cuéntanos tu experiencia con nosotros y así seguir mejorando juntos!</p>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <input type="text" name="txtName" class="form-control" placeholder="Tu nombre *" value="" />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" name="txtEmail" class="form-control" placeholder="Tu e-mail *" value="" />
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <textarea name="txtMsg" class="form-control" placeholder="Escribe tu mensaje*" style="width: 100%; height: 150px;"></textarea>
+                          <div class="form-group">
+                              <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+</div>
+</section>
+
+<!-- ====== Footer BS ====== -->
+
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-6 col-md-3 item">
+                  <h4>Productos</h4>
+                  <ul>
+                      <li><a href="#">Cupcakes</a></li>
+                      <li><a href="#">Donuts</a></li>
+                      <li><a href="#">Tortas</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-6 col-md-3 item text">
+                    <h4>Encuéntranos</h4>
+                    <p class="foot"> Dirección: Gral Artigas 1234, Montevideo. <br> Horario: Lun a Sáb - 10:00 a 20:00</p>
+              </div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 item text">
+                  <h4>Pastelería Keki</h4>
+                  <p class="foot">Nueva Pastelería con sabores únicos y creativos</p>
+              </div>
+
+              <div class="col-12 item social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <p class="copyright">Carolina González © 2021 | Coder House</p>
       </div>
     </footer>
+    </div>
     
   </body>
 </html>
