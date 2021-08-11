@@ -23,17 +23,15 @@
 <!-- ===== NavBar Responsive BS ===== -->
 <header class="main-header">
   <div class="container">
-    <nav class="navbar navbar-expand-lg main-nav px-0">
-      <a class="navbar-brand" href="../index.html">
-              <img src="../assets/favicon.svg" alt="Keki">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-lg main-nav px-0">
+      <a class="navbar-brand" href="../index.html"> <img src="../assets/favicon.svg" alt="Keki"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="icon-bar icon-bar-1"></span>
                       <span class="icon-bar icon-bar-2"></span>
                       <span class="icon-bar icon-bar-3"></span>
                   </button>
       <div class="collapse navbar-collapse" id="mainMenu">
-        <ul class="navbar-nav ml-auto text-uppercase f1">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase f1">
           <li>
             <a href="../index.html">Inicio</a>
           </li>
@@ -49,6 +47,7 @@
           <li>
             <a href="contact.html">Contacto</a>
           </li>
+          <li></li>
         </ul>
       </div>
     </nav>
@@ -73,10 +72,10 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12 col-sm-12">
-    <h3>Nuestra ubicación</h3>
-              <div>
-                <iframe width="600px" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=bulevard%20general%20artigas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <div class="col-md-12 col-sm-10">
+    <h2 class="subtitle">Nuestra ubicación</h2>
+              <div class="iframe-container">
+                <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=bulevard%20general%20artigas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
               </div>
     </div>
   </div>
@@ -119,5 +118,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="../boost/js/bootstrap.bundle.js"></script>
+    
 </body>
 </html>
