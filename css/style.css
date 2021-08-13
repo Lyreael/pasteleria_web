@@ -118,6 +118,7 @@ p {
   top: 0;
   left: 0;
   z-index: 99;
+  margin-bottom: 5%;
   width: 100%;
   transition: all 0.4s ease;
   background-color: #ffaead;
@@ -174,10 +175,9 @@ p {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    text-align: center;
   }
   .main-header .navbar-nav {
-    margin-top: 70px;
+    margin-top: 10px;
   }
   .main-header .navbar-nav li .nav-link {
     text-align: center;

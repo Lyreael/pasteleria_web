@@ -116,6 +116,7 @@
     top: 0;
     left: 0;
     z-index: 99;
+    margin-bottom: 5%;
     width: 100%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -176,12 +177,10 @@
             width: 100%;
             padding-left: 0;
             padding-right: 0;
-            text-align: center;
         }
 
     .navbar-nav {
-        margin-top: 70px;
-
+        margin-top: 10px;
         li .nav-link {
             text-align: center;
             padding: 20px 15px;
