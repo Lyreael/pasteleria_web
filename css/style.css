@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
 img, .caption {
   border-radius: .5rem;
 }
@@ -145,7 +147,7 @@ p {
 }
 
 .main-header .navbar-brand img {
-  max-width: 50%;
+  max-width: 20%;
   animation: fadeInLeft 0.4s both 0.4s;
 }
 
@@ -473,16 +475,6 @@ Colors:
 
 -------------------------------------*/
 /* GENERAL styles*/
-@font-face {
-  font-family: 'Poppin',sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap");
-}
-
-@font-face {
-  font-family: 'Open Sans',sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
-}
-
 * {
   margin: 0;
   padding: 0;
