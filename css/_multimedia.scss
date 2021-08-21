@@ -1,4 +1,5 @@
-div.img__base{
+div{
+&.img__base{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,8 +7,9 @@ div.img__base{
     img.img__base--cupcakes{
         width: 80%;
         padding: 15px;
-
+        margin-bottom: 5% ;
     }
+  }
 }
 
 img{
@@ -101,3 +103,71 @@ video {
   
 
   //  Prod-end
+
+  // us
+
+  //.card{
+  //  width: 80%;
+  //}
+
+  //place
+
+img{
+  &.place-pic{
+    width: 100%;
+  }
+}
+
+
+/*img efecto us*/
+.hover-us img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* for index */
+
+img.slide{
+  position: relative;
+  animation-name: slider;
+  animation-duration: 2.5s;
+
+}
+@keyframes slider {
+  0%   {opacity:0.1; left:-200px; }
+  100% {left:0px;}
+}
+
+img.rotate{
+  animation: {
+    name:spin;
+    duration: 6000ms;
+    iteration-count: infinite;
+    timing-function: linear;
+}
+@keyframes spin { 
+  from { 
+      transform: rotate(0deg); 
+  } to { 
+      transform: rotate(360deg); 
+  }
+}
+}

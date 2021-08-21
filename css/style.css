@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
 img, .caption {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 body {
@@ -9,13 +9,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff5f5;
 }
 
 h1.title {
   font-family: "Poppins", san-serif;
   font-size: 40px;
   font-weight: 700;
+  line-height: 44px;
+  color: #ff7b79;
+  padding: 20px 0 0 20px;
+}
+
+h1.title-index {
+  font-family: "Poppins", san-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
   line-height: 44px;
   color: #ff7b79;
   padding: 20px 0 0 20px;
@@ -33,6 +42,20 @@ h2.subtitle {
   padding: 20px 0 15px 20px;
 }
 
+h2.subtitle-product {
+  text-align: center;
+  margin: 1rem 0 2.5rem 0;
+}
+
+h2.subtitle-index {
+  color: #ffaead;
+  font-family: "Poppins", san-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0 15px 20px;
+}
+
 h3 {
   color: #ff7b79;
   font-family: "Poppins", san-serif;
@@ -44,9 +67,14 @@ h4 {
   font-size: 20px;
 }
 
+h4.tag-centred {
+  text-align: center;
+}
+
 h5 {
   color: #ffaead;
   font-size: 18px;
+  font-weight: 600;
 }
 
 h6 {
@@ -64,8 +92,31 @@ p {
   color: #313131;
 }
 
-.us__area {
-  padding: 2rem;
+section {
+  margin-top: 5%;
+}
+
+div .cat-start {
+  margin-top: 5%;
+}
+
+/* Us images*/
+.team-img {
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* back to top button*/
+.btn-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.btn-btt {
+  border-radius: 1.5rem;
 }
 
 /* main-header start */
@@ -118,7 +169,6 @@ p {
   top: 0;
   left: 0;
   z-index: 99;
-  margin-bottom: 5%;
   width: 100%;
   transition: all 0.4s ease;
   background-color: #ffaead;
@@ -148,7 +198,7 @@ p {
 }
 
 .main-header .navbar-brand img {
-  max-width: 20%;
+  max-width: 100%;
   animation: fadeInLeft 0.4s both 0.4s;
 }
 
@@ -239,6 +289,7 @@ div.img__base {
 div.img__base img.img__base--cupcakes {
   width: 80%;
   padding: 15px;
+  margin-bottom: 5%;
 }
 
 img {
@@ -318,6 +369,58 @@ video {
   padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+img.place-pic {
+  width: 100%;
+}
+
+/*img efecto us*/
+.hover-us img:hover {
+  opacity: 1;
+  animation: flash 1.5s;
+}
+
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* for index */
+img.slide {
+  position: relative;
+  animation-name: slider;
+  animation-duration: 2.5s;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0.1;
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+img.rotate {
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .footer-dark {
@@ -431,8 +534,8 @@ section.contactSp {
 }
 
 .contact-image img {
-  width: 11%;
-  margin-top: -3%;
+  width: 20%;
+  margin-top: -10%;
 }
 
 .contact-form form {

@@ -540,6 +540,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+
 }
 @media (min-width: 576px) {
   .container,
@@ -2624,37 +2625,37 @@ fieldset:disabled .btn {
   opacity: 0.65;
 }
 .btn-primary {
+  color: #ffe4e3;
+  background-color: #ffaead;
+  border-color: #ffe4e3;
+}
+.btn-primary:hover {
   color: #fff;
   background-color: #ff7b79;
   border-color: #ff7b79;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-}
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background-color: #ff7b79;
+  border-color: #ff7b79;
+  box-shadow: 0 0 0 0.25rem #ff7b7949;
 }
 .btn-check:active + .btn-primary,
 .btn-check:checked + .btn-primary,
 .btn-primary.active,
 .btn-primary:active,
 .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  color: #ff7b79;
+  background-color: rgba(255, 255, 255, 0.534);
+  border-color: #ff7b79;
 }
 .btn-check:active + .btn-primary:focus,
 .btn-check:checked + .btn-primary:focus,
 .btn-primary.active:focus,
 .btn-primary:active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem #ff7b793a;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -5503,7 +5504,7 @@ fieldset:disabled .btn {
 }
 .carousel-inner {
   position: relative;
-  width: 50%;
+  width: 100%;
   overflow: hidden;
 }
 .carousel-inner::after {
@@ -5573,7 +5574,7 @@ fieldset:disabled .btn {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: white;
   text-align: center;
   background: 0;
   border: 0;
@@ -5597,18 +5598,18 @@ fieldset:disabled .btn {
   opacity: 0.9;
 }
 .carousel-control-prev {
-  left: 22%;
+  left: 0%;
 }
 .carousel-control-next {
-  right: 22%;
+  right: 0%;
 }
 
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
